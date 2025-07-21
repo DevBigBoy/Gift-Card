@@ -179,32 +179,4 @@ class GiftCardUsage extends AbstractModel implements GiftCardUsageInterface
     {
         return [self::CACHE_TAG . '_' . $this->getId()];
     }
-
-    /**
-     * Validate usage before save
-     *
-     * @return $this
-     * @throws \Magento\Framework\Exception\LocalizedException
-     */
-    //    public function beforeSave()
-    //    {
-    //        // Validate required fields
-    //        if (!$this->getGiftCardId()) {
-    //            throw new \Magento\Framework\Exception\LocalizedException(__('Gift card ID is required'));
-    //        }
-    //
-    //        if (!$this->getOrderId()) {
-    //            throw new \Magento\Framework\Exception\LocalizedException(__('Order ID is required'));
-    //        }
-    //
-    //        if (!$this->getNotes()) {
-    //            throw new \Magento\Framework\Exception\LocalizedException(__('Notes are required'));
-    //        }
-    //
-    //        if ($this->getValueChange() === null || $this->getValueChange() === '') {
-    //            throw new \Magento\Framework\Exception\LocalizedException(__('Value change is required'));
-    //        }
-    //
-    //        return parent::beforeSave();
-    //    }
 }

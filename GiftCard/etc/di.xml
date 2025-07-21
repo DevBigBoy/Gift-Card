@@ -11,7 +11,11 @@
     <preference for="SwiftOtter\GiftCard\Api\Data\GiftCardInterface" type="SwiftOtter\GiftCard\Model\GiftCard" />
     <preference for="SwiftOtter\GiftCard\Api\Data\GiftCardUsageInterface" type="SwiftOtter\GiftCard\Model\GiftCardUsage" />
 
+    <!-- Search Interface Preferences -->
+    <preference for="SwiftOtter\GiftCard\Api\Data\GiftCardSearchResultsInterface" type="SwiftOtter\GiftCard\Repository\GiftCardSearchResults" />
 
+    <!-- Repository Interface Preferences -->
+    <preference for="SwiftOtter\GiftCard\Api\GiftCardRepositoryInterface" type="SwiftOtter\GiftCard\Repository\GiftCardRepository" />
 
     <!-- Logger Configuration -->
     <type name="SwiftOtter\GiftCard\Logger\Handler">
@@ -28,7 +32,5 @@
             </argument>
         </arguments>
     </type>
-
-
 
 </config>
