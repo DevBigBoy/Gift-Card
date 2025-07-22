@@ -33,4 +33,12 @@
         </arguments>
     </type>
 
+
+    <virtualType name="SwiftOtter\GiftCard\Model\ResourceModel\Product\Indexer\Price\GiftCardProductPrice"
+                 type="Magento\Catalog\Model\ResourceModel\Product\Indexer\Price\SimpleProductPrice">
+        <arguments>
+            <argument name="productType" xsi:type="const">SwiftOtter\GiftCard\Model\Product\Type\GiftCard::TYPE_CODE</argument>
+        </arguments>
+    </virtualType>
+
 </config>
