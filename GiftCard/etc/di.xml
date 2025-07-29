@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Data Interface Preferences -->
+    <preference for="SwiftOtter\GiftCard\Api\Data\GiftCardInterface" type="SwiftOtter\GiftCard\Model\GiftCard" />
+    <preference for="SwiftOtter\GiftCard\Api\Data\GiftCardUsageInterface" type="SwiftOtter\GiftCard\Model\GiftCardUsage" />
+
+
+
+    <!-- Logger Configuration -->
+    <type name="SwiftOtter\GiftCard\Logger\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+
+    <type name="SwiftOtter\GiftCard\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">swift_otter_gift_card</argument>
+            <argument name="handlers" xsi:type="array">
+                <item name="system" xsi:type="object">SwiftOtter\GiftCard\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+
+
+
+</config>
