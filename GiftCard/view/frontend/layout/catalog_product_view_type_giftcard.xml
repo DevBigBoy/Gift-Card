@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.form.content">
+            <block
+                name="giftcard.details"
+                before="product.info.addtocart"
+                template="SwiftOtter_GiftCard::details.phtml"
+            >
+                <arguments>
+                    <argument xsi:type="object" name="details" >SwiftOtter\GiftCard\ViewModel\FrontendDetail</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
